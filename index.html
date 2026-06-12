@@ -6,15 +6,15 @@
     <title>NP Local Business | Independent Trade Network</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Custom color configuration to perfectly match the logo
+        // Custom color configuration to match your exact brand identity from the logo
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'np-red': '#BE2126',    // The exact bright red from the 'NP' text
-                        'np-blue': '#004A99',   // The darker blue from 'Local' and the globe
-                        'np-green': '#65AE3C',  // The specific green of the NP area map
-                        'np-gray': '#737373',   // The sub-text gray
+                        'np-red': '#BE2126',    // Bright corporate red from 'NP' logo font
+                        'np-blue': '#004A99',   // Darker profile blue from 'Local' typography
+                        'np-green': '#65AE3C',  // Map green representing South East Wales territory
+                        'np-gray': '#555555',   // High contrast sub-text dark gray
                     }
                 }
             }
@@ -25,131 +25,166 @@
 
     <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="https://i.ibb.co/3s4X2Hn/np-local-business-logo.png" alt="NP Local Business Logo" class="h-16 w-auto" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='block'">
-                <div id="fallback-logo" style="display:none;" class="flex items-center gap-2">
-                    <img src="np%20logo%203.png" alt="NP Local Business Logo" class="h-14 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('fallback-title').style.display='block'">
-                    <span class="text-xl font-bold tracking-tight text-slate-900">Local Business</span>
+            <div class="flex items-center">
+                <img id="main-logo" src="logo.png" alt="NP Local Business Logo" class="h-16 w-auto object-contain" 
+                     onerror="this.onerror=function(){ this.style.display='none'; document.getElementById('fallback-title').style.display='block'; }; this.src='np%20logo%203.png';">
+                
+                <div id="fallback-title" style="display:none;" class="flex items-center gap-2">
+                    <span class="text-2xl font-black text-np-blue">NP</span>
+                    <span class="text-xl font-bold text-slate-900">Local Business</span>
                 </div>
             </div>
             
-            <div class="flex items-center gap-4 text-sm font-medium">
-                <a href="#features" class="text-slate-600 hover:text-np-blue transition hidden sm:block">Our Model</a>
-                <a href="#directory" class="text-slate-600 hover:text-np-blue transition">Browse Members</a>
-                <span class="bg-slate-100 text-np-gray px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold">
-                    Join: 07XXX XXXXXX
-                </span>
+            <div class="flex items-center gap-5 text-sm font-semibold">
+                <a href="#coverage" class="text-slate-600 hover:text-np-blue transition hidden md:block">18 Districts</a>
+                <a href="#features" class="text-slate-600 hover:text-np-blue transition hidden sm:block">Fees & Referrals</a>
+                <a href="#directory" class="text-slate-600 hover:text-np-blue transition font-bold text-np-blue">Directory</a>
+                <a href="tel:07000000000" class="bg-np-blue text-white px-4 py-2 rounded-lg text-xs font-bold shadow-sm hover:bg-opacity-90 transition">
+                    Call Direct
+                </a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white py-16 px-4 text-center">
+    <header class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white py-20 px-4 text-center border-b border-np-blue/20">
         <div class="max-w-4xl mx-auto">
-            <span class="bg-np-green/10 text-np-green border border-np-green/20 text-xs font-semibold uppercase px-3 py-1 rounded-full tracking-wider">
-                Verified South East Wales Trade Network
+            <span class="bg-np-green/10 text-np-green border border-np-green/20 text-xs font-bold uppercase px-3 py-1 rounded-full tracking-wider">
+                Exclusive Local Trade Hub
             </span>
-            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mt-4 leading-tight">
-                Supporting Independent Trades <br />
+            <h1 class="text-3xl md:text-5xl font-black tracking-tight mt-5 leading-tight text-white">
+                Protecting Independent Trades <br />
                 Across the <span class="text-np-green">NP Postcode Map</span>
             </h1>
-            <p class="text-slate-300 mt-4 text-base max-w-xl mx-auto font-normal">
-                Capped at just 20 businesses per postcode area to guarantee high visibility. No massive corporations, just pure local quality.
+            <p class="text-slate-300 mt-4 text-base max-w-xl mx-auto font-normal leading-relaxed">
+                We strictly limit membership to just <strong>20 selected categories per area</strong>. Lock down your sector exclusivity before a competitor claims it.
             </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm font-bold">
+                <a href="#directory" class="bg-np-blue text-white px-6 py-3 rounded-xl shadow-md hover:bg-opacity-95 transition">
+                    Browse Active Members
+                </a>
+                <a href="#coverage" class="bg-slate-800 text-slate-200 border border-slate-700 px-6 py-3 rounded-xl hover:bg-slate-700 transition">
+                    View 18 Target Postcodes
+                </a>
+            </div>
         </div>
     </header>
 
-    <section id="features" class="py-12 max-w-6xl mx-auto px-4">
+    <section id="features" class="py-16 max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl font-extrabold text-slate-900 tracking-tight">Simple Pricing. Local Impact.</h2>
+            <p class="text-sm text-np-gray mt-1">Zero hidden commissions, zero platform cuts, built entirely on community trust.</p>
+        </div>
+        
         <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-xl border-l-4 border-np-red shadow-sm">
-                <div class="text-sm font-semibold text-np-gray mb-1">Pricing Options</div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-np-red"></div>
+                <div class="text-xs font-bold text-np-gray uppercase tracking-wider mb-1">Direct Membership</div>
                 <div class="flex items-baseline gap-1">
-                    <span class="text-3xl font-extrabold text-np-red">£95</span>
-                    <span class="text-slate-500">/year</span>
+                    <span class="text-4xl font-black text-np-red">£95</span>
+                    <span class="text-slate-500 font-medium">/12 months</span>
                 </div>
-                <div class="flex items-baseline gap-1 mt-1">
-                    <span class="text-lg font-bold text-slate-800">£50</span>
-                    <span class="text-slate-500 text-sm">/6 months</span>
-                </div>
-                <p class="text-slate-600 text-xs mt-3 leading-relaxed">No automated card charges—we handle payments personally via phone link or cash.</p>
+                <div class="text-sm font-bold text-slate-800 mt-1">£50 <span class="text-xs font-normal text-slate-500">/6 months trial</span></div>
+                <p class="text-slate-600 text-xs mt-4 leading-relaxed">
+                    Payments are handled transparently via phone payment link or direct in-person invoice. This completely eliminates automatic card loops and heavy platform merchant charges.
+                </p>
             </div>
             
-            <div class="bg-white p-6 rounded-xl border-l-4 border-np-blue shadow-sm">
-                <div class="text-sm font-semibold text-np-gray mb-1">Member Referrals</div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-np-blue"></div>
+                <div class="text-xs font-bold text-np-gray uppercase tracking-wider mb-1">Network Referrals</div>
                 <div class="flex items-baseline gap-1">
-                    <span class="text-3xl font-extrabold text-np-blue">£20</span>
-                    <span class="text-slate-500"> bonus</span>
+                    <span class="text-4xl font-black text-np-blue">£20</span>
+                    <span class="text-slate-500 font-medium"> cash payout</span>
                 </div>
-                 <div class="flex items-baseline gap-1 mt-1">
-                    <span class="text-lg font-bold text-slate-800">£10</span>
-                    <span class="text-slate-500 text-sm"> for 6-mo</span>
-                </div>
-                <p class="text-slate-600 text-xs mt-3 leading-relaxed">When they join, we text or bank transfer a cash bonus straight to you as a thank you.</p>
+                <div class="text-sm font-bold text-slate-800 mt-1">£10 <span class="text-xs font-normal text-slate-500">for 6-month signups</span></div>
+                <p class="text-slate-600 text-xs mt-4 leading-relaxed">
+                    When an active trade introduces another local business to our network, we text a cash reward straight to your bank account as a direct thank you for expanding the community map.
+                </p>
             </div>
             
-            <div class="bg-white p-6 rounded-xl border-l-4 border-np-green shadow-sm">
-                <div class="text-sm font-semibold text-np-gray mb-1">Local Community Pot</div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden">
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-np-green"></div>
+                <div class="text-xs font-bold text-np-gray uppercase tracking-wider mb-1">The Community Pot</div>
                 <div class="flex items-baseline gap-1">
-                    <span class="text-3xl font-extrabold text-np-green">£5.00</span>
-                    <span class="text-slate-500"> contribution</span>
+                    <span class="text-4xl font-black text-np-green">£5.00</span>
+                    <span class="text-slate-500 font-medium"> split allocation</span>
                 </div>
-                 <div class="flex items-baseline gap-1 mt-1">
-                    <span class="text-lg font-bold text-slate-800">£2.50</span>
-                    <span class="text-slate-500 text-sm"> for 6-mo</span>
-                </div>
-                <p class="text-slate-600 text-xs mt-3 leading-relaxed">Supporting grassroots youth sports and local Gwent groups.</p>
+                <div class="text-sm font-bold text-slate-800 mt-1">£2.50 <span class="text-xs font-normal text-slate-500">from 6-month plans</span></div>
+                <p class="text-slate-600 text-xs mt-4 leading-relaxed">
+                    Every active slot puts money right back into Gwent. These funds are used entirely to sponsor local grassroots youth sports clubs and independent volunteer groups.
+                </p>
             </div>
         </div>
     </section>
 
-    <section id="directory" class="max-w-6xl mx-auto px-4 py-8 border-t border-slate-200">
-        <div class="flex items-center justify-between mb-6">
-            <div>
-                <h2 class="text-xl font-bold text-slate-900">Live Verified Members</h2>
-                <p class="text-xs text-slate-500">Currently seeding local founding partners</p>
+    <section id="coverage" class="bg-slate-900 text-white py-14 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-10">
+                <h2 class="text-2xl font-extrabold tracking-tight">Network Coverage Tracker</h2>
+                <p class="text-xs text-slate-400 mt-1">Monitoring sector availability across the 18 main NP districts</p>
             </div>
-            <span class="bg-slate-200 text-np-blue text-xs font-bold px-2.5 py-1 rounded-full">
-                1 Active
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-center">
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-np-green text-sm">NP4</span><span class="text-[10px] text-slate-400">Pontypool (1/20)</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP7</span><span class="text-[10px] text-slate-400">Abergavenny</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP8</span><span class="text-[10px] text-slate-400">Crickhowell</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP10</span><span class="text-[10px] text-slate-400">Western Newport</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP11</span><span class="text-[10px] text-slate-400">Crumlin / Blackwood</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP12</span><span class="text-[10px] text-slate-400">Blackwood Area</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP13</span><span class="text-[10px] text-slate-400">Abertillery</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP15</span><span class="text-[10px] text-slate-400">Usk Area</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP16</span><span class="text-[10px] text-slate-400">Chepstow</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP18</span><span class="text-[10px] text-slate-400">Caerleon / Magor</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP19</span><span class="text-[10px] text-slate-400">East Newport</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP20</span><span class="text-[10px] text-slate-400">Central Newport</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP22</span><span class="text-[10px] text-slate-400">Tredegar</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP23</span><span class="text-[10px] text-slate-400">Ebbw Vale</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP24</span><span class="text-[10px] text-slate-400">New Tredegar</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP25</span><span class="text-[10px] text-slate-400">Monmouth</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-white text-sm">NP26</span><span class="text-[10px] text-slate-400">Caldicot</span></div>
+                <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/50"><span class="block font-black text-np-green text-sm">NP44</span><span class="text-[10px] text-slate-400">Cwmbran (1/20)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="directory" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h2 class="text-2xl font-black text-slate-900 tracking-tight">Active Founding Members</h2>
+                <p class="text-xs text-np-gray mt-0.5">Vetted independent businesses inside the network</p>
+            </div>
+            <span class="bg-np-blue/10 text-np-blue text-xs font-extrabold px-3 py-1 rounded-full border border-np-blue/20">
+                2 Members Verified
             </span>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-4">
+        <div class="grid md:grid-cols-2 gap-6">
             
-            <div class="bg-white p-5 rounded-xl border border-slate-200 hover:border-np-blue transition shadow-sm">
-                <div class="flex justify-between items-start gap-2">
-                    <div>
-                        <h3 class="font-bold text-slate-900 text-lg">Haven Mobility</h3>
-                        <span class="inline-block bg-slate-100 text-np-gray text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-bold mt-1">
-                            Personal Care & Lifestyle
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-np-blue transition-all duration-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-4">
+                        <div>
+                            <h3 class="font-extrabold text-slate-900 text-lg leading-snug">Haven Mobility</h3>
+                            <span class="inline-block bg-slate-100 text-slate-700 text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-bold mt-1">
+                                Personal Care & Lifestyle
+                            </span>
+                        </div>
+                        <span class="bg-np-blue text-white font-black text-xs px-3 py-1 rounded-lg shadow-sm">
+                            NP44
                         </span>
                     </div>
-                    <span class="bg-np-blue text-white font-black text-xs px-2.5 py-1 rounded-md shadow-sm">
-                        NP44
-                    </span>
+                    <p class="text-slate-600 text-xs mt-4 leading-relaxed">
+                        Providing quality mobility scooters, wheelchairs, walking aids, and tailored independent living solutions across Cwmbran, Pontypool, and the broader valleys.
+                    </p>
                 </div>
-                <p class="text-slate-600 text-xs mt-3 leading-relaxed">
-                    Providing quality mobility scooters, wheelchairs, and independent living aids across Cwmbran and the valleys.
-                </p>
-                <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs">
-                    <span class="text-slate-700 font-semibold">📞 01633 861717</span>
-                    <a href="https://www.havenmobility.co.uk" target="_blank" rel="noopener noreferrer" class="text-np-blue hover:underline font-bold">
-                        Visit Site →
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs font-bold">
+                    <span class="text-slate-800">📞 01633 861717</span>
+                    <a href="https://www.havenmobility.co.uk" target="_blank" rel="noopener noreferrer" class="text-np-blue hover:underline">
+                        Visit Website →
                     </a>
                 </div>
             </div>
 
-            </div>
-    </section>
-
-    <section class="bg-slate-950 text-white text-center py-12 px-4 mt-12 border-t border-np-blue/20">
-        <h2 class="text-xl font-bold">Want to secure your exclusive sector slot?</h2>
-        <p class="text-slate-400 text-xs mt-2 max-w-md mx-auto leading-relaxed">
-            Give me a ring or drop a text to check if your trade category is still open in your postcode. Let's build local business together.
-        </p>
-        <div class="mt-5 text-2xl font-black text-np-red tracking-tight">
-            📱 [YOUR PHONE NUMBER HERE]
-        </div>
-        <p class="text-np-gray text-[10px] mt-2 uppercase tracking-wider">Your NP Postcode Directory</p>
-    </section>
-
-</body>
-</html>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-np-blue transition-all duration-200 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start gap-
