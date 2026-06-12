@@ -10,11 +10,10 @@
             theme: {
                 extend: {
                     colors: {
-                        'np-red': '#BE2126',    // Bright corporate red
-                        'np-blue': '#004A99',   // Darker profile blue
-                        'np-green': '#65AE3C',  // Map green representing territory
-                        'np-gray': '#555555',   // High contrast sub-text dark gray
-                        'haven-teal': '#008080', 
+                        'np-red': '#BE2126',
+                        'np-blue': '#004A99',
+                        'np-green': '#65AE3C',
+                        'np-gray': '#555555',
                     }
                 }
             }
@@ -23,118 +22,65 @@
 </head>
 <body class="min-h-screen bg-slate-50 font-sans antialiased text-slate-800">
 
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-md">
         <div class="max-w-6xl mx-auto px-4 h-24 flex items-center justify-between">
-            
             <div class="flex flex-col justify-center">
                 <div class="flex items-baseline gap-1.5 leading-none">
                     <span class="text-3xl md:text-4xl font-black tracking-tighter text-np-red uppercase">NP</span>
                     <span class="text-xl md:text-2xl font-extrabold tracking-tight text-np-blue uppercase">Postcode</span>
                 </div>
-                <div class="text-[11px] font-black tracking-widest text-np-green uppercase mt-0.5">
-                    Business Community
-                </div>
+                <div class="text-[11px] font-black tracking-widest text-np-green uppercase mt-0.5">Business Community</div>
             </div>
-            
             <div class="flex items-center gap-6 text-sm font-bold">
-                <a href="#benefits" class="text-slate-600 hover:text-np-blue transition">Member Benefits</a>
-                <a href="#coverage" class="text-slate-600 hover:text-np-blue transition hidden md:block">18 Districts</a>
-                <a href="#features" class="text-slate-600 hover:text-np-blue transition hidden sm:block">Fees & Referrals</a>
+                <a href="#benefits" class="text-slate-600 hover:text-np-blue transition">Benefits</a>
                 <a href="#directory" class="text-slate-600 hover:text-np-blue transition text-np-blue font-black">Directory</a>
-                <a href="tel:07000000000" class="bg-np-blue text-white px-5 py-2.5 rounded-xl text-xs font-black shadow-md hover:bg-opacity-90 transition uppercase tracking-wider">
-                    Call Direct
-                </a>
+                <a href="#features" class="text-slate-600 hover:text-np-blue transition hidden sm:block">Fees</a>
+                <a href="#coverage" class="text-slate-600 hover:text-np-blue transition">18 Districts</a>
             </div>
         </div>
     </nav>
 
     <header class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white py-24 px-4 text-center border-b-4 border-np-blue">
         <div class="max-w-4xl mx-auto">
-            <span class="bg-np-green text-slate-950 text-xs font-black uppercase px-4 py-1.5 rounded-full tracking-widest shadow-sm">
-                AN OPEN COMMUNITY FOR EVERY LOCAL TRADE
-            </span>
-            <h1 class="text-4xl md:text-6xl font-black tracking-tight mt-6 leading-none uppercase text-white">
-                GETTING INDEPENDENT TRADES FOUND <br />
-                ACROSS THE <span class="text-np-green">NP POSTCODE MAP</span>
-            </h1>
-            <p class="text-slate-200 mt-6 text-lg md:text-xl max-w-2xl mx-auto font-medium leading-relaxed">
-                Connecting trusted local experts directly with neighborhood customers. An open-book directory built to support and feature <strong class="text-np-red">every independent business</strong> working across our districts.
-            </p>
-            <div class="mt-10 flex flex-wrap justify-center gap-4 text-sm font-black uppercase tracking-wider">
-                <a href="#benefits" class="bg-np-red text-white px-8 py-4 rounded-xl shadow-lg hover:bg-opacity-95 transition">
-                    See What You Get
-                </a>
-                <a href="#directory" class="bg-np-blue text-white px-8 py-4 rounded-xl shadow-lg hover:bg-opacity-95 transition">
-                    Search the Directory
-                </a>
-            </div>
+            <span class="bg-np-green text-slate-950 text-xs font-black uppercase px-4 py-1.5 rounded-full tracking-widest">AN OPEN COMMUNITY FOR EVERY LOCAL TRADE</span>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mt-6 uppercase">GETTING TRADES FOUND ACROSS THE <span class="text-np-green">NP MAP</span></h1>
+            <p class="text-slate-200 mt-6 text-lg max-w-2xl mx-auto font-medium">An open-book community directory built to support and feature every independent business working across our districts.</p>
         </div>
     </header>
 
     <section id="benefits" class="py-20 max-w-6xl mx-auto px-4 border-b border-slate-200">
         <div class="text-center mb-16">
-            <span class="text-np-blue text-xs font-black uppercase tracking-widest">PROVEN LEAD GENERATION</span>
-            <h2 class="text-3xl md:text-4xl font-black text-slate-900 tracking-tight uppercase mt-2">What You Get As A Member</h2>
-            <p class="text-base text-np-gray mt-2 max-w-xl mx-auto font-medium">Everything you need to step out from behind giant corporate platforms and establish true local authority.</p>
+            <h2 class="text-3xl font-black text-slate-900 uppercase">What You Get As A Member</h2>
         </div>
-
         <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between">
+            <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-np-blue"></div>
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-np-blue/10 flex items-center justify-center mb-5">
-                        <span class="text-xl">🌐</span>
-                    </div>
-                    <h3 class="text-lg font-black text-slate-900 uppercase tracking-tight">Dedicated Webpage Profile</h3>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed font-medium">
-                        You get an exclusive, fully search-optimized digital business profile webpage. It securely showcases your brand identity, services, direct trading map sectors, contact details, and links to your social pages or active quote forms.
-                    </p>
-                </div>
-                <div class="mt-6 text-xs font-black uppercase tracking-wider text-np-blue">Instant Online Authority</div>
+                <h3 class="text-lg font-black uppercase">Dedicated Profile Page</h3>
+                <p class="text-slate-600 text-xs mt-3 leading-relaxed">Your own clean, search-optimized webpage showcasing your brand, gallery, contact details, and links directly back to you.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between">
+            <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-np-green"></div>
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-np-green/10 flex items-center justify-center mb-5">
-                        <span class="text-xl">🚀</span>
-                    </div>
-                    <h3 class="text-lg font-black text-slate-900 uppercase tracking-tight">Dominant Local SEO Injection</h3>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed font-medium">
-                        We map your specific trade profile against high-intent search criteria. When clients browse Google looking for terms like <span class="italic text-slate-800">"Electrician Cwmbran"</span> or <span class="italic text-slate-800">"Plumber Pontypool"</span>, our directory structure funnels that exposure directly to you.
-                    </p>
-                </div>
-                <div class="mt-6 text-xs font-black uppercase tracking-wider text-np-green">Rank Higher, Get Discovered</div>
+                <h3 class="text-lg font-black uppercase">Dominant Local SEO</h3>
+                <p class="text-slate-600 text-xs mt-3 leading-relaxed">We optimize your directory spot for high-intent Google search phrases like "Electrician Cwmbran" to funnel exposure directly to your profile.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden flex flex-col justify-between">
+            <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-np-red"></div>
-                <div>
-                    <div class="w-12 h-12 rounded-xl bg-np-red/10 flex items-center justify-center mb-5">
-                        <span class="text-xl">📢</span>
-                    </div>
-                    <h3 class="text-lg font-black text-slate-900 uppercase tracking-tight">Social Media Showcases</h3>
-                    <p class="text-slate-600 text-xs mt-3 leading-relaxed font-medium">
-                        We actively drive community cross-promotions. We structure strategic local community group spotlights and member features engineered entirely to put your brand name directly onto the mobile feeds of paying consumers.
-                    </p>
-                </div>
-                <div class="mt-6 text-xs font-black uppercase tracking-wider text-np-red">Active Group Marketing</div>
+                <h3 class="text-lg font-black uppercase">Social Group Amplification</h3>
+                <p class="text-slate-600 text-xs mt-3 leading-relaxed">Active regional community spotlights and business features engineered to get your brand seen directly by paying local customers.</p>
             </div>
         </div>
     </section>
 
-    <section id="directory" class="max-w-6xl mx-auto px-4 py-16">
+    <section id="directory" class="max-w-6xl mx-auto px-4 py-20 border-b border-slate-200">
         <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm mb-10 flex flex-col md:flex-row gap-4 items-center justify-between">
             <div>
-                <h2 class="text-2xl font-black text-slate-900 tracking-tight uppercase">Find a Local Verified Trade</h2>
-                <p class="text-xs text-np-gray mt-0.5 font-medium">Instantly discover verified independent businesses operating directly in your district</p>
+                <h2 class="text-2xl font-black text-slate-900 uppercase">Find a Local Verified Trade</h2>
+                <p class="text-xs text-np-gray mt-0.5">Discover independent businesses operating in your direct district</p>
             </div>
-            
             <div class="w-full md:w-72">
-                <label for="postcode-filter" class="block text-[10px] font-black uppercase tracking-wider text-slate-500 mb-1">Filter by Postcode Area</label>
-                <select id="postcode-filter" onchange="filterPostcodes()" class="w-full bg-slate-100 border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-bold text-slate-800 focus:outline-none focus:border-np-blue transition cursor-pointer">
-                    <option value="ALL">Show All Districts (Full View)</option>
-                    <option value="NP4">NP4 — Pontypool / Blaenavon</option>
+                <select id="postcode-filter" onchange="filterPostcodes()" class="w-full bg-slate-100 border-2 border-slate-200 rounded-xl px-4 py-3 text-sm font-bold text-slate-800">
+                    <option value="ALL">Show All Districts</option>
+                    <option value="NP4">NP4 — Pontypool</option>
                     <option value="NP7">NP7 — Abergavenny</option>
                     <option value="NP44">NP44 — Cwmbran Area</option>
                 </select>
@@ -142,95 +88,61 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-6" id="directory-grid">
-            
-            <div class="business-card bg-white p-6 rounded-2xl border-2 border-slate-200 hover:border-np-blue transition-all duration-200 shadow-sm flex flex-col justify-between" data-postcode="NP44">
+            <div class="business-card bg-white p-6 rounded-2xl border-2 border-slate-200 hover:border-np-blue transition shadow-sm flex flex-col justify-between" data-postcode="NP44">
                 <div>
-                    <div class="flex justify-between items-start gap-4">
+                    <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="font-black text-slate-900 text-xl leading-tight">Haven Mobility</h3>
-                            <span class="inline-block bg-slate-100 text-slate-700 text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-bold mt-1">
-                                Personal Care & Lifestyle
-                            </span>
+                            <h3 class="font-black text-slate-900 text-xl">Haven Mobility</h3>
+                            <span class="inline-block bg-slate-100 text-slate-700 text-[10px] uppercase font-bold px-2 py-0.5 rounded mt-1">Personal Care & Lifestyle</span>
                         </div>
-                        <span class="bg-np-blue text-white font-black text-xs px-3 py-1 rounded-lg shadow-sm">NP44</span>
+                        <span class="bg-np-blue text-white font-black text-xs px-3 py-1 rounded-lg">NP44</span>
                     </div>
-                    <p class="text-slate-600 text-xs mt-4 leading-relaxed font-medium">
-                        Providing quality mobility scooters, wheelchairs, walking aids, and tailored independent living solutions across Cwmbran, Pontypool, and the broader valleys.
-                    </p>
+                    <p class="text-slate-600 text-xs mt-4">Providing quality mobility scooters, wheelchairs, walking aids, and tailored independent living solutions across Cwmbran.</p>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs font-black uppercase tracking-wide">
-                    <span class="text-slate-800">📞 01633 861717</span>
-                    <button onclick="openHavenProfile()" class="text-np-blue hover:underline font-black cursor-pointer">
-                        View Full Profile →
-                    </button>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs font-black uppercase">
+                    <span>📞 01633 861717</span>
+                    <a href="haven.html" class="text-np-blue hover:underline font-black">View Full Profile →</a>
                 </div>
             </div>
 
-            <div class="business-card bg-white p-6 rounded-2xl border-2 border-slate-200 hover:border-np-blue transition-all duration-200 shadow-sm flex flex-col justify-between" data-postcode="NP4">
+            <div class="business-card bg-white p-6 rounded-2xl border-2 border-slate-200 hover:border-np-blue transition shadow-sm flex flex-col justify-between" data-postcode="NP4">
                 <div>
-                    <div class="flex justify-between items-start gap-4">
+                    <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="font-black text-slate-900 text-xl leading-tight">Example Electrical Trades</h3>
-                            <span class="inline-block bg-slate-100 text-slate-700 text-[10px] uppercase tracking-wider px-2 py-0.5 rounded font-bold mt-1">
-                                Domestic Electrician
-                            </span>
+                            <h3 class="font-black text-slate-900 text-xl">Example Electrical Trades</h3>
+                            <span class="inline-block bg-slate-100 text-slate-700 text-[10px] uppercase font-bold px-2 py-0.5 rounded mt-1">Domestic Electrician</span>
                         </div>
-                        <span class="bg-np-blue text-white font-black text-xs px-3 py-1 rounded-lg shadow-sm">NP4</span>
+                        <span class="bg-np-blue text-white font-black text-xs px-3 py-1 rounded-lg">NP4</span>
                     </div>
-                    <p class="text-slate-600 text-xs mt-4 leading-relaxed font-medium">
-                        Specializing in domestic rewires, fuse box upgrades, landlord testing, and emergency callouts. Serving residential properties throughout Pontypool.
-                    </p>
+                    <p class="text-slate-600 text-xs mt-4">Specializing in domestic rewires, fuse box upgrades, landlord testing, and emergency callouts across Pontypool.</p>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs font-black uppercase tracking-wide">
-                    <span class="text-slate-800">📞 07123 456789</span>
-                    <span class="text-slate-400 font-medium italic text-[11px] normal-case">Local Partner Network</span>
+                <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center text-xs font-black uppercase">
+                    <span>📞 07123 456789</span>
+                    <span class="text-slate-400 font-medium normal-case italic">Local Partner Network</span>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section id="features" class="py-16 max-w-6xl mx-auto px-4 border-t border-slate-200">
+    <section id="features" class="py-16 max-w-6xl mx-auto px-4 border-b border-slate-200">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-black text-slate-900 tracking-tight uppercase">Simple Pricing. Local Impact.</h2>
-            <p class="text-sm text-np-gray mt-1 font-medium">Zero hidden commissions, zero platform cuts, built entirely on community promotion.</p>
+            <h2 class="text-3xl font-black text-slate-900 uppercase">Simple Pricing. Local Impact.</h2>
         </div>
-        
         <div class="grid md:grid-cols-3 gap-6">
             <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-np-red"></div>
-                <div class="text-xs font-black text-np-gray uppercase tracking-wider mb-1">Direct Advertising Space</div>
-                <div class="flex items-baseline gap-1">
-                    <span class="text-4xl font-black text-np-red">£95</span>
-                    <span class="text-slate-500 font-bold">/12 months</span>
-                </div>
-                <p class="text-slate-600 text-xs mt-4 leading-relaxed font-medium">
-                    Payments are handled transparently via phone payment link or direct in-person invoice. This completely eliminates automatic card loops and heavy platform merchant charges.
-                </p>
+                <div class="text-2xl font-black text-np-red">£95 / 12 Months</div>
+                <p class="text-slate-600 text-xs mt-3">Direct advertising slot. Payments are handled cleanly via direct invoice or payment links, keeping platform charges out of it.</p>
             </div>
-            
             <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-np-blue"></div>
-                <div class="text-xs font-black text-np-gray uppercase tracking-wider mb-1">Community Referrals</div>
-                <div class="flex items-baseline gap-1">
-                    <span class="text-4xl font-black text-np-blue">£20</span>
-                    <span class="text-slate-500 font-bold"> cash reward</span>
-                </div>
-                <p class="text-slate-600 text-xs mt-4 leading-relaxed font-medium">
-                    When an active trade introduces another local business to our network, we send a cash reward straight to your bank account as a direct thank you for expanding the community map.
-                </p>
+                <div class="text-2xl font-black text-np-blue">£20 Cash Reward</div>
+                <p class="text-slate-600 text-xs mt-3">When an active community trade introduces another local independent business, we send a direct finder reward straight to your bank account.</p>
             </div>
-            
             <div class="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm relative overflow-hidden">
                 <div class="absolute top-0 left-0 right-0 h-2 bg-np-green"></div>
-                <div class="text-xs font-black text-np-gray uppercase tracking-wider mb-1">The Community Pot</div>
-                <div class="flex items-baseline gap-1">
-                    <span class="text-4xl font-black text-np-green">£5.00</span>
-                    <span class="text-slate-500 font-bold"> split allocation</span>
-                </div>
-                <p class="text-slate-600 text-xs mt-4 leading-relaxed font-medium">
-                    Every active slot puts advertising money right back into Gwent. These funds are used entirely to sponsor local grassroots youth sports clubs and independent volunteer groups.
-                </p>
+                <div class="text-2xl font-black text-np-green">£5 Community Pot</div>
+                <p class="text-slate-600 text-xs mt-3">Every active regular slot drops money directly into our local fund used entirely to sponsor grassroots youth sport kits and community networks.</p>
             </div>
         </div>
     </section>
@@ -238,57 +150,49 @@
     <section id="coverage" class="bg-slate-900 text-white py-16 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="mb-10 text-center md:text-left">
-                <h2 class="text-3xl font-black tracking-tight uppercase">Network Growth Tracker</h2>
-                <p class="text-xs text-slate-400 mt-1 font-medium">Monitoring active business placement across the main NP districts</p>
+                <h2 class="text-3xl font-black uppercase">NP Postcode Map Coverage Tracker</h2>
+                <p class="text-xs text-slate-400 mt-1">Monitoring active business placement across all 18 primary districts</p>
             </div>
-            
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-center">
-                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-np-green text-sm">NP4</span><span class="text-[10px] text-slate-400 font-bold">Pontypool Active</span></div>
-                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP7</span><span class="text-[10px] text-slate-400 font-bold">Abergavenny</span></div>
-                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP8</span><span class="text-[10px] text-slate-400 font-bold">Crickhowell</span></div>
-                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP44</span><span class="text-[10px] text-slate-400 font-bold">Cwmbran Active</span></div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-center text-xs font-bold">
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-np-green text-sm">NP4</span>Pontypool Active</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP7</span>Abergavenny</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP8</span>Crickhowell</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP10</span>Western Newport</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP11</span>Crumlin Area</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP12</span>Blackwood Area</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP13</span>Abertillery</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP15</span>Usk Area</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP16</span>Chepstow</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP18</span>Caerleon / Magor</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP19</span>East Newport</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP20</span>Central Newport</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP22</span>Tredegar</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP23</span>Ebbw Vale</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP24</span>New Tredegar</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP25</span>Monmouth</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-white text-sm">NP26</span>Caldicot</div>
+                <div class="bg-slate-800 p-3 rounded-xl border border-slate-700"><span class="block font-black text-np-green text-sm">NP44</span>Cwmbran Active</div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 text-white text-center py-16 px-4 border-t border-np-blue/20">
-        <p class="text-slate-600 text-[10px] uppercase tracking-widest font-bold">
-            © 2026 NP Postcode Business Community — Powered by JCR Networks
-        </p>
+    <footer class="bg-slate-950 text-white text-center py-12 px-4">
+        <p class="text-slate-600 text-[10px] uppercase font-bold tracking-widest">© 2026 NP Postcode Business Community — Powered by JCR Networks</p>
     </footer>
 
-
-    <div id="haven-profile-modal" class="fixed inset-0 bg-slate-950/80 z-50 backdrop-blur-sm hidden flex items-center justify-center p-4 overflow-y-auto">
-        <div class="bg-slate-50 w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl relative border border-slate-200 my-8">
-            
-            <div class="bg-slate-900 text-white text-[10px] md:text-xs py-3 px-4 font-bold uppercase tracking-wider text-center flex justify-between items-center">
-                <span>🛡️ Verified Independent Member of the NP Postcode Business Community</span>
-                <button onclick="closeHavenProfile()" class="bg-white/10 hover:bg-white/20 text-white rounded-full p-1.5 px-3 font-black text-xs uppercase cursor-pointer transition">
-                    ✕ Close Page
-                </button>
-            </div>
-
-            <div class="bg-white border-b border-slate-200 px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div class="flex items-center gap-4 text-center sm:text-left flex-col sm:flex-row">
-                    <div class="w-16 h-16 bg-haven-teal text-white rounded-2xl flex items-center justify-center font-black text-2xl shadow-md shrink-0">
-                        HM
-                    </div>
-                    <div>
-                        <h1 class="text-2xl font-black tracking-tight text-slate-900 uppercase leading-none">Haven Mobility</h1>
-                        <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-black uppercase tracking-wider mt-2 inline-block">Personal Care & Lifestyle</span>
-                    </div>
-                </div>
-                <a href="tel:01633861717" class="bg-np-blue text-white px-6 py-3 rounded-xl text-xs font-black shadow-md uppercase tracking-wider w-full sm:w-auto text-center">
-                    Call 01633 861717
-                </a>
-            </div>
-
-            <div class="p-6 md:p-8 grid md:grid-cols-3 gap-8 max-h-[70vh] overflow-y-auto">
-                
-                <div class="md:col-span-2 space-y-6">
-                    <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm">
-                        <h3 class="text-base font-black text-slate-900 uppercase tracking-tight border-b pb-2 mb-3">About Our Business</h3>
-                        <p class="text-slate-600 text-xs leading-relaxed font-medium mb-3">
-                            Based locally in Cwmbran, Haven Mobility is dedicated to providing premium independent living solutions across Torfaen, Newport, and the broader South Wales valleys. We specialize in the supply, delivery, and personalized configurations of high-quality mobility aids.
-                        </p>
-                        <p class="text-slate-6
+    <script>
+        function filterPostcodes() {
+            var selectedValue = document.getElementById("postcode-filter").value;
+            var cards = document.getElementsByClassName("business-card");
+            for (var i = 0; i < cards.length; i++) {
+                var cardPostcode = cards[i].getAttribute("data-postcode");
+                if (selectedValue === "ALL" || cardPostcode === selectedValue) {
+                    cards[i].style.display = "flex";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
